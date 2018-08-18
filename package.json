@@ -1,0 +1,14 @@
+{
+  "name": "rxjs-queue",
+  "version": "1.0.0",
+  "description": "Implementation of a queue, with pausing and batched sequential loading, using RxJS",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "MBstuart",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  }
+}
