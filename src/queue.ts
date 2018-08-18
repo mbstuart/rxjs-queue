@@ -24,15 +24,7 @@ export class Queue<T> {
       this.initialiseQueueChecking().subscribe();
   
       this.despatchList
-      .pipe(tap((queued) => {
-        // tslint:disable-next-line:no-console
-        console.info(`${queued} queued`);
-      }))
       .pipe(delayWhen((queued) => this.actionEnabled.pipe(mergeMap(enabled => enabled ? of(queued) : NEVER))))
-      .pipe(tap((queued) => {
-        // tslint:disable-next-line:no-console
-        console.info(`${queued} enabled`);
-      }))
       .pipe(concatMap(this.action)).subscribe();
     }
 

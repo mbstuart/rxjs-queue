@@ -1,5 +1,5 @@
 {
-  "name": "rxjs-queue",
+  "name": "observable-queue",
   "version": "1.0.0",
   "description": "Implementation of a queue, with pausing and batched sequential loading, using RxJS",
   "main": "dist/index.js",
@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc"
   },
-  "author": "MBstuart",
+  "author": "Matthewtbs",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^3.0.1"
