@@ -2,7 +2,8 @@
   "name": "rxjs-queue",
   "version": "1.0.0",
   "description": "Implementation of a queue, with pausing and batched sequential loading, using RxJS",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
